@@ -122,6 +122,22 @@
   z-index: 0;
 }
 
+/* Ensure particles are visible in the PhotosSection */
+.particles-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Ensure particles are visible in the Footer */
+.particles-footer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
 /* Animation for particles to fade in smoothly */
 @keyframes fadeIn {
   from { opacity: 0; }
