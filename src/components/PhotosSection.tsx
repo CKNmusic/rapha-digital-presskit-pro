@@ -1,6 +1,5 @@
 
 import React, { useEffect, useRef } from 'react';
-import InstagramFeed from './InstagramFeed';
 
 const PhotosSection: React.FC = () => {
   const particlesRef = useRef<HTMLDivElement>(null);
@@ -68,9 +67,9 @@ const PhotosSection: React.FC = () => {
         <div ref={particlesRef} id="particles-photos" className="particles-bg h-full w-full"></div>
       </div>
       
-      <h2 className="presskit-heading relative z-10">Artist's Photos & Feed</h2>
+      <h2 className="presskit-heading relative z-10">Artist's Photos and Logo</h2>
       
-      <div className="flex justify-center relative z-10 mb-12">
+      <div className="flex justify-center relative z-10">
         <a 
           href="#" 
           className="presskit-button"
@@ -79,13 +78,8 @@ const PhotosSection: React.FC = () => {
             window.open('https://drive.google.com', '_blank');
           }}
         >
-          DOWNLOAD PRESS KIT
+          CLICK TO ACCESS
         </a>
-      </div>
-      
-      <h3 className="text-center text-xl mb-6 relative z-10">Latest Instagram Posts</h3>
-      <div className="relative z-10">
-        <InstagramFeed />
       </div>
     </section>
   );
